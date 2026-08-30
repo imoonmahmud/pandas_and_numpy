@@ -50,3 +50,18 @@ print(int_from_float)
 # np.int8, np.int16, np.int32, np.int64
 # np.float32, np.float64
 # np.bool_, np.str_, np.complex128
+
+# Reshape and Resize
+arr = np.arange(12)
+
+# Reshape (must keep same total elements)
+reshaped = arr.reshape(3, 4) # 3 rows, 4 cols
+reshaped_3d = arr.reshape(2, 2, 3)
+
+# -1 means 'let numpay calculate dimension automatically'
+auto = arr.reshape(4, -1)
+print(auto.shape)
+
+# Flatten back to 1D
+flat = reshaped.flatten()
+print(flat)
