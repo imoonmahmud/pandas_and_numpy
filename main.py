@@ -35,3 +35,5 @@ df.index.name = 'Rank'
 # Top performers
 top_students = df[df['Average'] >= 85]
 print(f"\nTop performers (avg >= 85): {list(top_students['Name'])}")
+
+
